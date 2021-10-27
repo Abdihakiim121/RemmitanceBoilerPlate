@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(morganMiddleware);
 app.use(process.env.API_VERSION, interface);
 // app.use(helmet());
-// app.use(cors());
+ app.use(cors());
 logger.warn("Hello From Logger");
 
 app.use((req,res,next) =>{
