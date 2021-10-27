@@ -1,0 +1,284 @@
+{"level":"info","message":"hello every one"}
+{"level":"error","message":"hello every one"}
+{"level":"info","message":"Hello From Logger"}
+undefined [undefined] info: Hello From Logger
+2021-10-16T09:01:33.261Z [right meow!] info: Hello From Logger
+2021-10-16T10:21:37.358Z [right meow!] info: Hello From Logger
+{
+  message: 'Hello From Logger',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2021-10-16T10:22:48.345Z'
+}
+{
+  message: 'Hello From Logger',
+  level: 'info',
+  label: 'Boiler Plate',
+  timestamp: '2021-10-16T10:24:17.694Z'
+}
+2021-10-16T10:25:46.022Z [Boiler Plate] info: Hello From Logger
+2021-10-16T10:32:53.031Z [Boiler Plate] [32minfo[39m: Hello From Logger
+2021-10-16T10:33:02.563Z [Boiler Plate] [32minfo[39m: Hello From Logger
+[32minfo[39m: Hello From Logger {"label":"Boiler Plate","timestamp":"2021-10-16T10:33:58.818Z"}
+undefined
+undefined
+undefined
+undefined
+undefined
+2021-10-16T10:43:42.400Z [Boiler Plate] [32minfo[39m: Hello From Logger
+2021-10-16T10:44:02.743Z [Boiler Plate] [32minfo[39m: Hello From Logger
+2021-10-16T10:44:25.774Z [Boiler Plate] [32minfo[39m: Hello From Logger
+2021-10-16T10:44:55.113Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:29:10.147Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:29:47.185Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:30:23.092Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:33:43.119Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:33:54.037Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:34:40.531Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:34:46.226Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:42:19.240Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T11:42:47.363Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:26:26.716Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:26:35.464Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:42:24.762Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:43:12.877Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:43:34.295Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:43:47.641Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T17:43:58.589Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T18:33:09.346Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-16T18:35:54.247Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T06:01:51.474Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T06:23:41.362Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T06:44:14.563Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T06:56:25.514Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T06:57:09.724Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T07:07:38.438Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T07:07:46.950Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T07:19:40.612Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T07:23:35.317Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T07:48:31.233Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T07:48:39.272Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T07:50:43.612Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T07:50:47.755Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:12:40.154Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:12:46.859Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:16:27.354Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:16:31.577Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:18:55.308Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:19:02.731Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:19:34.701Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:19:38.061Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:35:41.586Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:35:46.865Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:36:32.717Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:36:36.892Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:39:53.253Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:40:01.225Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:40:11.406Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:40:20.376Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:40:26.105Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:41:28.460Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:41:33.502Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:41:42.132Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:42:23.992Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:43:13.902Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:43:19.060Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:43:30.501Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:43:34.821Z [Boiler Plate] [32minfo[39m: Creating User
+2021-10-17T13:51:12.525Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:51:16.191Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T13:51:39.371Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T13:52:44.911Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:52:52.139Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T13:53:58.395Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T13:54:02.223Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:21:35.281Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:21:39.968Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:32:45.771Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:32:50.046Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:33:29.914Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:33:34.015Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:39:10.173Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:39:14.890Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:46:46.775Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:46:50.321Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:46:57.465Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:51:10.615Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T15:51:15.928Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:55:30.944Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-17T15:56:46.637Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T16:10:32.750Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:38:45.270Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:40:32.743Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:40:47.955Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:41:02.655Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:44:35.333Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-17T17:50:27.542Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:04:57.141Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:07:23.839Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:09:05.643Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:11:20.299Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:12:45.472Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:13:53.973Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:14:37.332Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:15:27.325Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:24:32.347Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:24:40.063Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:25:17.233Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:29:50.911Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:30:02.486Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:30:08.647Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:31:01.325Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:33:06.926Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:33:30.373Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:56:30.999Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T05:56:37.244Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T05:56:44.882Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T06:30:22.362Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T06:31:01.796Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T06:32:03.550Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T06:32:19.381Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-18T06:43:20.928Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T06:44:29.052Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-18T06:44:43.740Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T05:08:29.631Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:09:11.498Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T05:11:18.093Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:14:13.770Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:16:57.780Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T05:21:51.713Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:24:44.320Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:48:28.559Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:49:01.064Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:59:08.101Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T05:59:18.651Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T07:08:50.821Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T07:09:00.837Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:09:08.538Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T07:09:25.810Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T07:22:59.124Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:28:28.218Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:33:33.050Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:34:38.956Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:39:04.025Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:40:41.535Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:41:44.301Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:42:34.057Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:46:11.215Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:50:14.079Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:52:17.189Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:53:11.691Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T07:57:28.321Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:00:18.587Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:03:54.397Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:06:07.169Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:07:15.420Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:12:59.330Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:13:45.461Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:35:32.426Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-20T08:36:08.191Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T08:36:42.496Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-20T08:50:47.410Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-23T17:13:54.795Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-23T19:33:56.688Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:22:40.026Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:26:15.891Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:33:49.824Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:33:55.000Z [Boiler Plate] [32minfo[39m: Authentication on email xyws@gmail.com and Password 134
+2021-10-24T04:34:50.081Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T04:36:56.079Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:37:06.142Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T04:37:56.258Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:37:59.844Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T04:38:39.916Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12348
+2021-10-24T04:47:48.323Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:47:51.419Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12348
+2021-10-24T04:48:33.763Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T04:56:50.664Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T04:56:59.459Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12374
+2021-10-24T04:57:07.591Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T05:08:04.168Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:08:10.918Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:09:46.913Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:09:49.616Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:23:00.412Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:23:04.732Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:24:39.566Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:24:43.079Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:25:39.053Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:25:43.473Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:30:59.345Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:31:02.507Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:32:40.756Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:32:49.044Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12343
+2021-10-24T05:32:54.074Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T05:32:58.935Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12345
+2021-10-24T05:38:26.115Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:38:30.837Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12345
+2021-10-24T05:39:54.367Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:39:58.164Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12345
+2021-10-24T05:41:58.487Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:42:05.387Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12345
+2021-10-24T05:44:25.739Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T05:44:38.899Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T05:45:20.823Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12344
+2021-10-24T07:03:41.743Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:03:48.295Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 12344
+2021-10-24T07:04:32.949Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:07:03.828Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:07:07.511Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:11:03.649Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:11:09.640Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:11:20.741Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:11:25.989Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:12:54.384Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:12:59.140Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:31:27.767Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-24T07:31:36.297Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:31:42.302Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T07:31:47.102Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-24T18:31:45.292Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T03:31:05.690Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T03:31:29.561Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T03:31:48.756Z [Boiler Plate] [32minfo[39m: Calling create user
+2021-10-25T03:34:08.826Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T03:34:25.521Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:04:50.619Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:04:56.383Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:09:29.396Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:10:14.479Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:11:02.876Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:12:51.410Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:12:55.961Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:15:22.000Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:16:36.705Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:16:46.355Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:19:41.503Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:20:28.709Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:20:48.052Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:26:00.191Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:29:25.954Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:29:49.731Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:30:04.251Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:31:29.519Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:31:34.437Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:32:17.626Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:33:58.439Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:34:07.810Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:36:41.771Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:45:03.839Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:45:42.446Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-25T05:45:58.935Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:46:11.362Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-25T05:59:12.012Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T05:20:43.083Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T05:22:21.158Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-27T05:24:26.206Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-27T05:25:36.807Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T05:45:45.053Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T05:46:13.629Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-27T05:48:14.890Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T05:48:20.714Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-27T06:37:45.884Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-10-27T06:38:19.800Z [Boiler Plate] [32minfo[39m: Authentication on email xyz@gmail.com and Password 1234
+2021-10-27T06:40:37.224Z [Boiler Plate] [33mwarn[39m: Hello From Logger
