@@ -2,7 +2,7 @@ require('dotenv').config();
 var status = require('http-status')
 const express = require('express');
 const app = express();
-const morgan = require('morgan')
+//const morgan = require('morgan')
 const interface = require('./router/interface');
 const logger = require('./config/logger');
 const morganMiddleware = require('./middleware/morgan');
@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(morganMiddleware);
 app.use(process.env.API_VERSION, interface);
 // app.use(helmet());
+console.log(process.env.API_VERSION);
 app.use(cors());
 logger.warn("Hello From Logger");
 
