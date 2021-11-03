@@ -11,19 +11,7 @@ router.post('/getUserByEmail', usersController.getUserByEmail)
 router.post('/create', authMiddleware.auth,validate(userValidator.createUser),usersController.create)
 router.patch('/updateUser',validate(userValidator.UpdateUs),usersController.updateUser)
 router.post('/delete', usersController.deleteUser)
-
-// router.get('/create', (req, res)=>{
-//     users.create(req, res);
-// })
-
-// router.get('/update', (req, res)=>{
-//     users.update(req, res);
-// })
-
-
-// router.get('/delete',(req, res)=>{
-//     users.delete(req, res);
-// })
+router.get('/getStudents', usersController.getAllStudent);
 
 module.exports=router;
 

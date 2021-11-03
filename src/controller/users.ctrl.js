@@ -3,11 +3,19 @@ const logger = require('../config/logger');
 const userService = require('../service/user.service');
 let { ApiError } = require('../payload/apErrors');
 let { ApiResponses } = require('../payload/apiResponse');
+let database = require('../config/database');
 const { date } = require('joi');
 
 const getAllUsers = (req, res) => {
     let users = userService.getAllUsers();
     res.status(status.OK).send(users);
+}
+
+ const getAllStudent = async (req, res) => {
+    let query = 'select *from students';
+    let result = await database.getAllStudents(query);
+    res.status(status.OK).send(new ApiResponses(status.OK," Data Found",result));
+    console.log(result);
 }
 
 const getUserByEmail = (req, res) => {
@@ -75,5 +83,6 @@ module.exports = {
     getUserByEmail,
     create,
     updateUser,
-    deleteUser
+    deleteUser, 
+    getAllStudent
 }

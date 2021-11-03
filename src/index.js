@@ -1,6 +1,7 @@
 require('dotenv').config();
 var status = require('http-status')
 const express = require('express');
+const database =require('./config/database')
 const app = express();
 //const morgan = require('morgan')
 const interface = require('./router/interface');
