@@ -1,4 +1,5 @@
 const e = require("express");
+const database = require('../config/database')
 
 const users =[
     {
@@ -30,6 +31,11 @@ const getUserByEmailAndPassword= (email, password)=>{
     return users.filter(u=>u.email===email &&  u.password===password);
 }
 
+const  getUsernameAndUserId =async (userid, username) =>{
+     console.log("Hello World")
+    return await database.getAllStudents(`select * from students where id =${userid} and name='${username}'`)
+}
+
 const create=(user)=>{
     users.push(user)
     return true;
@@ -57,8 +63,6 @@ const del = (data) =>{
     });
     return true;
 }
-
-
 module.exports={
     getUsers, 
     getOneUser, 
@@ -66,5 +70,6 @@ module.exports={
     update, 
     del,
     isEmailExist,
-    getUserByEmailAndPassword
+    getUserByEmailAndPassword,
+    getUsernameAndUserId,
 }

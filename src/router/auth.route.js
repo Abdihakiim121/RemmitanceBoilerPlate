@@ -4,7 +4,8 @@ const authctrl = require('../controller/auth.ctrl');
 const validate = require('../middleware/validators')
 const loginValidations = require('../validations/auth.validations');
 
-router.post('/User', validate(loginValidations.login), authctrl.Login)
+// Routers
+router.post('/login', validate(loginValidations.login), authctrl.Login)
 router.post('/register', validate(loginValidations.register), authctrl.register)
 
-module.exports=router;
+module.exports = router;

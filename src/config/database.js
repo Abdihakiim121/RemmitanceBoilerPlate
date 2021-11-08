@@ -1,4 +1,5 @@
 const oracledb = require('oracledb');
+const util =require('../utils/util')
 
 const host = '15.15.0.59:1521'
 const database = 'students'
@@ -7,7 +8,7 @@ const password = 'abdihakim'
 
 oracledb.initOracleClient({ libDir: 'C:\\Users\\hp\\Downloads\\Compressed\\instantclient-basic-windows.x64-21.3.0.0.0\\instantclient_21_3' })
 
-//checkConnection ();
+
 
 async function checkConnection() {
     try {
@@ -20,38 +21,38 @@ async function checkConnection() {
         })
 
         console.log('connection Successfull');
-        //let response = await connection.execute('select * from students');
-        // console.log(response);
+        
 
         return await connection;
 
     } catch (err) {
         console.error(err);
     }
-    // finally{
-    //     if(connection){
-    //        await connection.close();
-    //     }
-    // }
+   
 
 }
 
+checkConnection ();
 
-
-async function getAllStudents(query) {
+const  getAllStudents = async (query) => {
 
     try {
 
         connection = await checkConnection();
         let result = await connection.execute(query)
-        return await result
+        return await util.converObject(result) 
 
     } catch (err) {
         console.error(err);
     }
-
+    
+ finally{
+    if(connection){
+       await connection.close();
+    }
+  }
+    
 }
-
 
 module.exports = {
     getAllStudents

@@ -1,35 +1,23 @@
 const status = require('http-status');
-const logger = require('../config/logger');
-const { ApiError } = require('../payload/apErrors');
 const { ApiResponses } = require('../payload/apiResponse');
-const authService = require('../service/auth.service')
+const authService = require('../service/auth.service');
+const { handleAsync } = require('../utils/util');
 
-const Login =(req, res)=>{
-    let email = req.body.email;
-    let password = req.body.password;
-    const loginResponse = authService.Login(email, password);
+const Login = handleAsync(async (req, res) => {
+    let userid = req.body.userid;
+    let username = req.body.username;
+    const loginResponse = await authService.Login(userid, username);
+    console.log(userid, username);
+    res.status(status.OK).send(new ApiResponses(status.OK, "login Successfully", loginResponse));
+})
 
-   // res.status(status.OK).send(loginResponse);
-    res.status(status.OK).send(new ApiResponses(status.OK,"login Successfully",loginResponse));
-
+const register = (req, res) => {
+    res.status(status.NOT_IMPLEMENTED).send(new ApiResponses(status.NOT_IMPLEMENTED, "Not Implemented"));
 }
 
-const register=(req, res)=>{
-    res.send('This is a registeration Page')
-}
-
-
-module.exports=
+module.exports =
 {
-Login, 
-register,
+    Login,
+    register,
 }
 
-// exports.login= (req, res)=>{
-
-
-
-//    console.log(process.env.PAYMENT_GATEWAY_URL);
-//    res.status(status.OK).send('OK');
-//     logger.warn("Hello From Logger");
-// }

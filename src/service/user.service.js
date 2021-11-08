@@ -18,7 +18,8 @@ const createUser =(user) =>{
 }
 
 const getAllUsers = () =>{
-    return userModel.getUsers();
+    // return userModel.getUsers();
+    return userModel.getUsernameAndUserId();
 }
 
 const getUser = (email) =>{

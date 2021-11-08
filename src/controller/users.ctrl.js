@@ -4,17 +4,17 @@ const userService = require('../service/user.service');
 let { ApiError } = require('../payload/apErrors');
 let { ApiResponses } = require('../payload/apiResponse');
 let database = require('../config/database');
-const { date } = require('joi');
 
-const getAllUsers = (req, res) => {
-    let users = userService.getAllUsers();
-    res.status(status.OK).send(users);
+
+const getAllUsers = async (req, res) => {
+    let users = await userService.getAllUsers();
+    res.status(status.OK).send(new ApiResponses(status.OK, 'OK', users));
 }
 
- const getAllStudent = async (req, res) => {
+const getAllStudent = async (req, res) => {
     let query = 'select *from students';
     let result = await database.getAllStudents(query);
-    res.status(status.OK).send(new ApiResponses(status.OK," Data Found",result));
+    res.status(status.OK).send(new ApiResponses(status.OK, " Data Found", result));
     console.log(result);
 }
 
@@ -29,14 +29,12 @@ const create = (req, res) => {
     logger.info({ message: 'Calling create user' });
     let user = req.body;
     console.log(user);
-
-
     if (userService.isEmailExist(user.email)) {
         return res.status(status.NOT_ACCEPTABLE)
             .send(new ApiError(status.NOT_ACCEPTABLE, 'this userID is already exist'));
     }
     let createUserStatus = userService.createUser(user);
-    // cuser = userService.createUser(user);
+
     if (createUserStatus) {
 
         return res.status(status.OK).send(new ApiResponses(status.OK, 'created succcesfully'));
@@ -46,8 +44,6 @@ const create = (req, res) => {
 
 const updateUser = (req, res) => {
     let email = req.body;
-    //console.log(email);
-
     if (!userService.isEmailExist(email.email)) {
 
         return res.status(status.NOT_ACCEPTABLE).send('This id does not exist')
@@ -65,12 +61,11 @@ const deleteUser = (req, res) => {
     data = req.body;
     if (!userService.isEmailExist(data.email)) {
 
-        return res.status(status.NOT_ACCEPTABLE).send(new ApiError(status.NOT_ACCEPTABLE,'This email does not exist'))
+        return res.status(status.NOT_ACCEPTABLE).send(new ApiError(status.NOT_ACCEPTABLE, 'This email does not exist'))
     }
-
     result = userService.deleteuser(data)
     if (result) {
-        return res.status(status.OK).send(new ApiResponses(status.OK,"deleted Successfully",result));
+        return res.status(status.OK).send(new ApiResponses(status.OK, "deleted Successfully", result));
     }
 }
 
@@ -83,6 +78,6 @@ module.exports = {
     getUserByEmail,
     create,
     updateUser,
-    deleteUser, 
+    deleteUser,
     getAllStudent
 }

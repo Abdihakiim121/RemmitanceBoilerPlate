@@ -40,3 +40,54 @@
 2021-11-02T17:22:44.779Z [Boiler Plate] [33mwarn[39m: Hello From Logger
 2021-11-02T17:30:18.814Z [Boiler Plate] [33mwarn[39m: Hello From Logger
 2021-11-03T05:01:25.364Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-03T05:10:02.515Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T10:55:08.971Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:07:22.981Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:29:54.614Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:35:51.435Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:41:43.706Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:44:11.832Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:49:23.739Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password undefined
+2021-11-07T11:49:56.205Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password undefined
+2021-11-07T11:50:02.373Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password undefined
+2021-11-07T11:54:45.572Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T11:55:05.159Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password undefined
+2021-11-07T11:55:15.317Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password undefined
+2021-11-07T12:03:13.423Z [Boiler Plate] [32minfo[39m: Authentication on email 13 and Password undefined
+2021-11-07T12:03:25.329Z [Boiler Plate] [32minfo[39m: Authentication on email 132 and Password undefined
+2021-11-07T12:06:00.090Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T12:07:07.645Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T12:08:34.731Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T12:09:58.381Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T12:11:49.488Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T12:14:49.147Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:00:21.174Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password malyun
+2021-11-07T13:00:57.219Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:01:09.624Z [Boiler Plate] [32minfo[39m: Authentication on email 12 and Password malyun
+2021-11-07T13:07:28.286Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:07:51.645Z [Boiler Plate] [32minfo[39m: Authentication on email 12 and Password malyun
+2021-11-07T13:08:05.614Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password malyun
+2021-11-07T13:10:31.449Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:10:36.179Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password malyun
+2021-11-07T13:11:37.096Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:11:44.670Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password malyun
+2021-11-07T13:12:28.084Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-07T13:16:12.419Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:18:50.215Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:19:16.667Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-07T13:20:16.481Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:20:33.253Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-07T13:26:10.306Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:26:15.963Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-07T13:27:30.315Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:27:51.611Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password Ahmed
+2021-11-07T13:29:43.203Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:29:47.061Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password Ahmed
+2021-11-07T13:30:02.826Z [Boiler Plate] [32minfo[39m: Authentication on email 12 and Password Ahmed
+2021-11-07T13:31:45.062Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:31:55.392Z [Boiler Plate] [32minfo[39m: Authentication on email 12 and Password Ahmed
+2021-11-07T13:32:15.141Z [Boiler Plate] [32minfo[39m: Authentication on email 1 and Password Ahmed
+2021-11-07T13:32:31.625Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyuni
+2021-11-07T13:32:39.862Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-07T13:41:26.250Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-07T13:41:41.669Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
