@@ -8,7 +8,10 @@ const Login = handleAsync(async (req, res) => {
     let username = req.body.username;
     const loginResponse = await authService.Login(userid, username);
     console.log(userid, username);
-    res.status(status.OK).send(new ApiResponses(status.OK, "login Successfully", loginResponse));
+    let message = res.__('loginSuccess',username);
+    res.status(status.OK)
+    .send(new ApiResponses(status.OK, message, loginResponse));
+
 })
 
 const register = (req, res) => {
