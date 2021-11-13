@@ -12,7 +12,13 @@ const getUserByEmail = async (email) => {
 }
 // Login 
 const getUserByEmailAndPassword = async (email, password) => {
-    let result = await database.executeQuery(`select * from users where email =:email and password=:password`, [email, password])
+    let result = await database.executeQuery(`SELECT U.USERID, U.FULLNAME, U.EMAIL, R.ROLENAME
+                                        FROM USERS U
+                                                 INNER JOIN USERROLE UR on U.USERID = UR.userId
+                                                 INNER JOIN ROLES R on UR.roleId = R.ROLEID
+                                        WHERE EMAIL = :email
+                                          AND PASSWORD = :password
+                                          AND ACTIVE = 1`, [email, password])
     if (!result)
         return null;
     return result[0];

@@ -5,19 +5,13 @@ const authService = require('../service/auth.service');
 const { handleAsync } = require('../utils/util');
 //const permission = require('../model/permissions');
 
-
 const Login = handleAsync(async (req, res) => {
-
     let email = req.body.email;
     let password = req.body.password;
     let loginResponse = await authService.Login(email, password);
-
-
     let message = res.__('loginSuccess', email);
-
     res.status(status.OK)
         .send(new ApiResponses(status.OK, message, loginResponse));
-
 });
 
 const register = handleAsync(async (req, res) => {

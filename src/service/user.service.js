@@ -1,4 +1,3 @@
-
 const logger = require("../config/logger");
 const userModel = require('../model/user.mode');
 const { ApiError } = require("../payload/apErrors");
