@@ -1,5 +1,5 @@
 var status = require('http-status');
-const { ApiError } = require('../payload/apErrors')
+const { ApiError } = require('../payload/apiErrors')
 const apiResponse = require('../payload/apiResponse')
 const jwt = require('jsonwebtoken');
 //const roles = require('../helpers/roles');

@@ -1,6 +1,6 @@
-const userModel = require('../model/user.mode');
+const userModel = require('../model/user.model');
 const logger = require('../config/logger');
-const { ApiError } = require('../payload/apErrors');
+const { ApiError } = require('../payload/apiErrors');
 const permissions = require ('../model/permissions')
 
 var jwt = require('jsonwebtoken');

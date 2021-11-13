@@ -1,7 +1,7 @@
 const status = require('http-status');
 const logger = require('../config/logger');
 const userService = require('../service/user.service');
-let { ApiError } = require('../payload/apErrors');
+let { ApiError } = require('../payload/apiErrors');
 let { ApiResponses } = require('../payload/apiResponse');
 let database = require('../config/database');
 const { handleAsync } = require('../utils/util');

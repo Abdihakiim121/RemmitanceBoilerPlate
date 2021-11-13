@@ -1,6 +1,6 @@
 const logger = require("../config/logger");
-const userModel = require('../model/user.mode');
-const { ApiError } = require("../payload/apErrors");
+const userModel = require('../model/user.model');
+const { ApiError } = require("../payload/apiErrors");
 
 const isEmailExist= async(email)=>{
     let resp = await userModel.isEmailExist(email);

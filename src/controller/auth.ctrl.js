@@ -1,6 +1,6 @@
 const status = require('http-status');
 const {ApiResponses}  = require('../payload/apiResponse');
-const {ApiError} = require('../payload/apErrors')
+const {ApiError} = require('../payload/apiErrors')
 const authService = require('../service/auth.service');
 const { handleAsync } = require('../utils/util');
 //const permission = require('../model/permissions');
