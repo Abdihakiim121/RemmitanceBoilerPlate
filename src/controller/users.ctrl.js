@@ -4,74 +4,48 @@ const userService = require('../service/user.service');
 let { ApiError } = require('../payload/apErrors');
 let { ApiResponses } = require('../payload/apiResponse');
 let database = require('../config/database');
+const { handleAsync } = require('../utils/util');
+const { data } = require('../config/logger');
 
-
-const getAllUsers = async (req, res) => {
+const getAllUsers = handleAsync(async (req, res) => {
     let users = await userService.getAllUsers();
-    res.status(status.OK).send(new ApiResponses(status.OK, 'OK', users));
-}
+    res.status(status.OK).send(new ApiResponses(status.OK, "OK", users));
+});
 
-const getAllStudent = async (req, res) => {
-    let query = 'select *from students';
-    let result = await database.getAllStudents(query);
-    res.status(status.OK).send(new ApiResponses(status.OK, " Data Found", result));
-    console.log(result);
-}
-
-const getUserByEmail = (req, res) => {
+const getUserByEmail = handleAsync(async (req, res) => {
     let email = req.body
-    let userdata = userService.getUser(email.email);
-    res.status(status.OK).send(new ApiResponses(status.OK, "Waa la helay", userdata))
+    let userdata = await userService.getUserByEmail(email.email);
+    console.log('The Data Your were searching is found' + userdata)
+    res.status(status.OK).send(new ApiResponses(status.OK, "The Data Is Found", userdata))
+})
+
+const create = handleAsync(async (req, res) => {
+    logger.info(`Calling Create User`);
+    let  data = req.body;
+    let  result = await userService.isEmailCreated(data.email)
+    if(result) {
+    let  result = await userService.createUser(data)
+    return res.status(status.OK).send(new ApiResponses(status.OK, 'Created Successfully', result))
+    }
+   })
+
+const updateUser = handleAsync(async(req, res) => {
+    let  data = req.body;
+    let  result = await userService.isEmailExist(data.email)
+    if(result) {
+    let  result = await userService.updateUser(data)
+    return res.status(status.OK).send(new ApiResponses(status.OK, 'Updated Succesfully', result))
+    }
+})
+
+const deleteUser = handleAsync(async (req, res) => {
+    let  data = req.body;
+    let  result = await userService.isEmailExist(req.params.email)
+    if(result) {
+    let  result = await userService.deleteuser(req.params.email)
+    return res.status(status.OK).send(new ApiResponses(status.OK, 'Deleted Succesfully', result))
 }
-
-const create = (req, res) => {
-    // TODO:
-    logger.info({ message: 'Calling create user' });
-    let user = req.body;
-    console.log(user);
-    if (userService.isEmailExist(user.email)) {
-        return res.status(status.NOT_ACCEPTABLE)
-            .send(new ApiError(status.NOT_ACCEPTABLE, 'this userID is already exist'));
-    }
-    let createUserStatus = userService.createUser(user);
-
-    if (createUserStatus) {
-
-        return res.status(status.OK).send(new ApiResponses(status.OK, 'created succcesfully'));
-    }
-    return res.status(status.INTERNAL_SERVER_ERROR).send(new ApiError(status.BAD_REQUEST, 'Something Went Wrong'));
-}
-
-const updateUser = (req, res) => {
-    let email = req.body;
-    if (!userService.isEmailExist(email.email)) {
-
-        return res.status(status.NOT_ACCEPTABLE).send('This id does not exist')
-    }
-
-    result = userService.updateUsr(email)
-    //console.log(result);
-    if (result) {
-        return res.status(status.OK).send(new ApiResponses(status.OK, "Updated Successfully", result))
-    }
-
-}
-
-const deleteUser = (req, res) => {
-    data = req.body;
-    if (!userService.isEmailExist(data.email)) {
-
-        return res.status(status.NOT_ACCEPTABLE).send(new ApiError(status.NOT_ACCEPTABLE, 'This email does not exist'))
-    }
-    result = userService.deleteuser(data)
-    if (result) {
-        return res.status(status.OK).send(new ApiResponses(status.OK, "deleted Successfully", result));
-    }
-}
-
-
-
-
+})
 
 module.exports = {
     getAllUsers,
@@ -79,5 +53,4 @@ module.exports = {
     create,
     updateUser,
     deleteUser,
-    getAllStudent
-}
+    }

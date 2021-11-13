@@ -1,49 +1,58 @@
+
 const logger = require("../config/logger");
-const userModel =require('../model/user.mode')
+const userModel = require('../model/user.mode');
+const { ApiError } = require("../payload/apErrors");
 
-const isEmailExist=(email)=>{
-    if(userModel.isEmailExist(email))
-    {
-        //console.log("");
-       return true;
+const isEmailExist= async(email)=>{
+    let resp = await userModel.isEmailExist(email);
+    if(resp.length<= 0){
+        throw new ApiError (401, 'This Email does not exist')
     }
-    return false;
+    return true
+    
 }
 
-const createUser =(user) =>{
+const isEmailCreated= async(email)=>{
+    let resp = await userModel.isEmailExist(email);
+    if(resp.length > 0){
+        throw new ApiError (401, 'This Email is Created Already')
+    }
+    return true
+ }
 
-   // logger.log("Creating User");
-    let status = userModel.create(user);
-    return status;
+const createUser = async (user) => {
+    logger.info("Creating user ");
+    return await userModel.create(user);
 }
 
-const getAllUsers = () =>{
-    // return userModel.getUsers();
-    return userModel.getUsernameAndUserId();
+const getAllUsers = async () => {
+    return await userModel.getUsers();
 }
 
-const getUser = (email) =>{
-    return userModel.getOneUser(email);
+const getUserByEmail = async (email) =>{
+    let resp = await userModel.getUserByEmail(email)
+    console.log(resp);
+    return resp;
 }
 
-
-const updateUsr = (user) => {
-    result = userModel.update(user);
-    return result;
+const updateUser = async (user) => {
+    result = await userModel.update(user);
+    return await result;
 }
 
-const deleteuser = (email) =>{
-    result = userModel.del(email);
-    return result;
+const deleteuser = async(email) =>{
+    result = await userModel.del(email);
+    console.log("result is +"+result);
+    
+    return await result;
 }
 
 module.exports={
     getAllUsers,
     isEmailExist,
     createUser,
-    updateUsr, 
+    updateUser, 
     deleteuser,
-    getUser
-
-
+    getUserByEmail,
+    isEmailCreated
 }

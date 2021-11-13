@@ -1,26 +1,47 @@
 const status = require('http-status');
-const { ApiResponses } = require('../payload/apiResponse');
+const {ApiResponses}  = require('../payload/apiResponse');
+const {ApiError} = require('../payload/apErrors')
 const authService = require('../service/auth.service');
 const { handleAsync } = require('../utils/util');
+//const permission = require('../model/permissions');
+
 
 const Login = handleAsync(async (req, res) => {
-    let userid = req.body.userid;
-    let username = req.body.username;
-    const loginResponse = await authService.Login(userid, username);
-    console.log(userid, username);
-    let message = res.__('loginSuccess',username);
+
+    let email = req.body.email;
+    let password = req.body.password;
+    let loginResponse = await authService.Login(email, password);
+
+
+    let message = res.__('loginSuccess', email);
+
     res.status(status.OK)
-    .send(new ApiResponses(status.OK, message, loginResponse));
+        .send(new ApiResponses(status.OK, message, loginResponse));
 
-})
+});
 
-const register = (req, res) => {
-    res.status(status.NOT_IMPLEMENTED).send(new ApiResponses(status.NOT_IMPLEMENTED, "Not Implemented"));
-}
+const register = handleAsync(async (req, res) => {
+
+    let user = req.body;
+    let { result, err } = await authService.register(user);
+
+    if (err) {
+        return res.status(status.INTERNAL_SERVER_ERROR)
+            .send(new ApiError(status.INTERNAL_SERVER_ERROR, err));
+    }
+
+    res.status(status.OK).send(new ApiResponses(status.OK, res.__('registerSuccess'),result));
+});
+
+ const GetAllPermissions =handleAsync(async(req, res)=>{
+    let result = await authService.getAllpermissions();
+    res.status(status.OK).send(new ApiResponses(status.OK, 'List of Permissions', result))
+ })
 
 module.exports =
 {
     Login,
     register,
+    GetAllPermissions,
 }
 

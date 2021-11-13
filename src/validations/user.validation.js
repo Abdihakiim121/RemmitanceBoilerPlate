@@ -1,25 +1,26 @@
 const { json } = require('body-parser');
 const Joi = require('joi');
 
-const createUser =Joi.object({
-    firstName: Joi.string().required(),
-    lastName: Joi.string().required(),
-    age: Joi.number().required().min(12).max(100),
-    email: Joi.string().email(),
-   // password:Joi.string().required()
 
-});
+const createUser = Joi.object({
+     // userid: Joi.number().required(),
+   email: Joi.string().required().email(),
+   password: Joi.string().required(),
+   fullName:   Joi.string().required(),
+   active:  Joi.number().required()
+   });
 
-const UpdateUs =Joi.object({
-    firstName: Joi.string().required(),
-    lastName: Joi.string().required(),
-    age: Joi.number().required().min(12).max(100),
-    email: Joi.string().email(),
+const updateUser =Joi.object({
+   // userid: Joi.number().required(),
+    email: Joi.string().required().email(),
+    password: Joi.string().required(),
+    fullName:   Joi.string().required(),
+    active:  Joi.number().required()
    // password:Joi.string().required()
 });
 
 module.exports={
     createUser, 
-    UpdateUs,
+    updateUser,
     
 }

@@ -5,13 +5,13 @@ const userValidator = require('../validations/user.validation');
 const validate = require ('../middleware/validators') ;
 const authMiddleware = require('../middleware/auth')
 
-const app = express();
-router.get('/allUser',authMiddleware.auth, usersController.getAllUsers)
+//const app = express();
+router.get('/getAllUsers',authMiddleware.auth, authMiddleware.authentication('viewAllUsers') ,usersController.getAllUsers)
 router.post('/getUserByEmail', usersController.getUserByEmail)
-router.post('/create', authMiddleware.auth,validate(userValidator.createUser),usersController.create)
-router.patch('/updateUser',validate(userValidator.UpdateUs),usersController.updateUser)
-router.post('/delete', usersController.deleteUser)
-router.get('/getStudents', usersController.getAllStudent);
+router.post('/create',validate(userValidator.createUser),usersController.create)
+router.patch('/updateUser',validate(userValidator.updateUser),usersController.updateUser)
+router.post('/delete/:email', usersController.deleteUser)
+//router.get('/getStudents', usersController.getAllStudent);
 
 module.exports=router;
 

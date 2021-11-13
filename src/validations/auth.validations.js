@@ -1,18 +1,17 @@
 const Joi = require('joi');
+
 const login = Joi.object({
-    userid: Joi.number().required(),
-    username: Joi.string().required()
-    // email: Joi.string().required().email(),
-    // password: Joi.string().alphanum(),
-    // age: Joi.number().required().max(120).min(18),
-    // email: Joi.string().optional().email()
-})
+    email: Joi.string().required(),
+    password: Joi.string(),
+});
+
 const register = Joi.object({
-    email: Joi.string().required().email(),
-    password: Joi.string().alphanum(),
-    age: Joi.number().max(150).min(18),
-    // email:Joi.string().optional().email()
-})
+       email: Joi.string().required(),
+    password: Joi.string(),
+    fullName: Joi.string().required(),
+    active: Joi.number().required()
+});
+
 module.exports = {
     login,
     register

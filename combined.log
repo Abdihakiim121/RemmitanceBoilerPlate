@@ -97,3 +97,134 @@
 2021-11-08T05:36:50.635Z [Boiler Plate] [32minfo[39m: Authentication on email 23 and Password malyun
 2021-11-08T05:54:45.698Z [Boiler Plate] [33mwarn[39m: Hello From Logger
 2021-11-08T05:56:34.852Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-08T06:25:21.021Z [Boiler Plate] [33mwarn[39m: Hello From Logger
+2021-11-08T06:25:28.958Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-08T06:26:21.648Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-08T08:35:06.185Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-08T08:35:30.189Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-09T13:46:15.695Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:46:15.698Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:49:20.501Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:49:20.504Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:51:58.594Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:51:58.598Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:55:28.014Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:55:28.018Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:56:21.425Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:56:21.428Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:57:15.700Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:57:15.700Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T13:57:54.617Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T13:57:54.618Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T14:00:04.956Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T14:00:04.961Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T14:04:06.113Z [Boiler Plate] [32minfo[39m: Authentication on email 2 and Password malyun
+2021-11-09T14:04:20.297Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T14:04:20.298Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T14:50:24.052Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T14:50:24.056Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T15:30:42.362Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T15:30:42.365Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:01:46.478Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:01:46.482Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:07:07.920Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:07:07.923Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:14:37.934Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:14:37.938Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:24:10.017Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:24:10.019Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:26:48.193Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:26:48.195Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T16:29:53.084Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T16:29:53.087Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:04:53.748Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:04:53.751Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:09:11.744Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:09:11.747Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:12:40.942Z [Boiler Plate] [32minfo[39m: Authentication on email NurSahal@gmail.com and password 4321 by using jwt
+2021-11-09T17:13:15.740Z [Boiler Plate] [32minfo[39m: Authentication on email ali@gmail.com and password 4321 by using jwt
+2021-11-09T17:13:40.545Z [Boiler Plate] [32minfo[39m: Authentication on email NurSahal@gmail.com and password 4321 by using jwt
+2021-11-09T17:23:17.369Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:23:17.372Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:28:11.075Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:28:11.078Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:28:23.370Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:28:23.371Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:29:17.315Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:29:17.319Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:31:37.770Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:31:37.772Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:33:26.110Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:33:26.113Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:34:51.671Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:34:51.673Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:36:52.890Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:36:52.892Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-09T17:37:59.027Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-09T17:37:59.031Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T02:54:22.616Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T02:54:22.717Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T02:57:37.231Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T02:57:37.234Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T04:59:38.679Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T04:59:38.719Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:02:21.953Z [Boiler Plate] [32minfo[39m: Authentication on email NurSahal@gmail.com and password 4321 by using jwt
+2021-11-10T05:06:05.053Z [Boiler Plate] [32minfo[39m: Authentication on email NurSahal@gmail.com and password 4321 by using jwt
+2021-11-10T05:06:42.636Z [Boiler Plate] [32minfo[39m: Authentication on email NurSahal@gmail.com and password 4321 by using jwt
+2021-11-10T05:43:33.286Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:43:33.291Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:47:44.710Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:47:44.713Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:49:47.718Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:49:47.723Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:50:39.470Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:50:39.475Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:52:00.040Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:52:00.050Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:55:43.274Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:55:43.278Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T05:56:34.064Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T05:56:34.068Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T07:03:02.197Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-10T07:03:02.200Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-10T07:06:33.607Z [Boiler Plate] [32minfo[39m: Authentication on email sara@gmail.com and password 4321 by using jwt
+2021-11-10T07:19:16.613Z [Boiler Plate] [32minfo[39m: Authentication on email sara@gmail.com and password 4321 by using jwt
+2021-11-11T06:52:33.762Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T06:52:42.335Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T06:53:15.902Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T06:53:30.640Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T07:01:14.711Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T07:09:18.526Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T07:09:18.529Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-11T07:10:06.008Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T08:23:59.821Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T08:24:05.312Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T14:13:48.503Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T14:14:10.289Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T14:16:02.833Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-11T14:16:05.525Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-11T14:34:27.123Z [Boiler Plate] [32minfo[39m: Authentication on email sara@gmail.com and password 4321 by using jwt
+2021-11-11T14:34:59.267Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:04:53.474Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:08:04.201Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:15:43.856Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:17:04.134Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:18:52.117Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:21:00.697Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:24:44.611Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:26:01.443Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:27:03.886Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:29:04.624Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:30:43.759Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:33:07.130Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:33:14.892Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 432431 by using jwt
+2021-11-12T08:36:19.423Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:38:03.175Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:38:37.836Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:39:27.403Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-12T08:41:03.049Z [Boiler Plate] [32minfo[39m: Calling Create User
+2021-11-12T08:41:05.949Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-12T08:46:52.993Z [Boiler Plate] [32minfo[39m: Authentication on email Abdihakim@gmail.com and password 1234 by using jwt
+2021-11-13T05:26:38.087Z [Boiler Plate] [32minfo[39m: Authentication on email Abdihakim@gmail.com and password 1234 by using jwt
+2021-11-13T06:28:54.022Z [Boiler Plate] [32minfo[39m: Authentication on email Abdihakim@gmail.com and password 1234 by using jwt
+2021-11-13T06:29:17.121Z [Boiler Plate] [32minfo[39m: Authentication on email Abdihakiim@gmail.com and password 1234 by using jwt

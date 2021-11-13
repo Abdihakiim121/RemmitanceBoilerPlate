@@ -1,75 +1,68 @@
-const e = require("express");
-const database = require('../config/database')
+const database = require('../config/database');
 
-const users =[
-    {
-        firstName: "Mohamed Ali",
-        lastName: "Osmaan",
-        age: 90,
-        email: "xyz@gmail.com",
-        password: "1234"
-    },
 
-    {
-        firstName: "Yuusuf Ali",
-        lastName: "Mohamed",
-        age: 90,
-        email: "abc@gmaill.com",
-        password: "123"
-    }
-];
-//========================================
-const getUsers= ()=>{
-    return users;
+//Get All Users from the database
+const getUsers = async () => {
+    return await database.executeOneParamQuery(`select * from users`);
+}
+//get a user by email
+const getUserByEmail = async (email) => {
+    let result = await database.executeQuery(`select * from users where email=:email`, [email])
+    return result;
+}
+// Login 
+const getUserByEmailAndPassword = async (email, password) => {
+    let result = await database.executeQuery(`select * from users where email =:email and password=:password`, [email, password])
+    if (!result)
+        return null;
+    return result[0];
+}
+// Create New Users
+const create = async (user) => {
+    let email = user.email;
+    let password = user.password;
+    let fullName = user.fullName;
+    let active = user.active;
+
+    let result = await database.executeQuery(`INSERT INTO USERS (USERID, EMAIL, PASSWORD, FULLNAME, ACTIVE)
+                                        VALUES (userid_seq.nextval, :email, :password, :fullName,:active)`
+        , [email, password, fullName, active]);
+
+    if (result.rowsAffected === 1)
+        return true;
+
+    return false;
+}
+// Checking whether email exist or no
+const isEmailExist = (email) => {
+    return database.executeOneParamQuery(`select * from users where email ='${email}'`)
+
 }
 
-const getOneUser= (email)=>{
-    return users.filter(u=>u.email===email);
+//Updating from the database. 
+const update = async (user) => {
+    let email = user.email;
+    let password = user.password;
+    let fullName = user.fullName;
+    let active = user.active;
+    let result = await database.executeOneParamQuery(`update users set password ='${password}', fullname='${fullName}', active='${active}' where email='${email}'`)
+    return await result
 }
 
-const getUserByEmailAndPassword= (email, password)=>{
-    return users.filter(u=>u.email===email &&  u.password===password);
+//Delete Single Users Functions
+const del = async (email) => {
+    let query = `delete from users where email='${email}'`;
+    console.log(query);
+    return await database.executeOneParamQuery(query)
 }
 
-const  getUsernameAndUserId =async (userid, username) =>{
-     console.log("Hello World")
-    return await database.getAllStudents(`select * from students where id =${userid} and name='${username}'`)
-}
-
-const create=(user)=>{
-    users.push(user)
-    return true;
-}
-
-const isEmailExist =(email) =>{
-    return users.filter(e=> e.email==email).length
-}
-
-const update = (data) =>{
-    new_user = users.filter(u=> u.email == data.email)
-    new_user.map(function (value,index) { 
-
-        new_user[index].firstName = data.firstName;
-        new_user[index].lastName = data.lastName;
-        new_user[index].age = data.age;
-    });
-    return true
-}
-
-const del = (data) =>{
-    new_user = users.filter(u=> u.email == data.email)
-    new_user.map(function (value, index){
-        users.splice(index, 1);
-    });
-    return true;
-}
-module.exports={
-    getUsers, 
-    getOneUser, 
-    create, 
-    update, 
-    del,
+//exports.
+module.exports = {
+    getUserByEmail,
+    create,
+    update,
     isEmailExist,
     getUserByEmailAndPassword,
-    getUsernameAndUserId,
+    del,
+    getUsers
 }
