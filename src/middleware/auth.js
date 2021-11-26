@@ -30,29 +30,11 @@ const authentication = (data) => handleAsync(async (req, res, next) => {
     throw new ApiError(401, `you haven't any permission to ${data} `)
 });
 
-// Authorization Procedure
-// const authorization = (req, res, next) => {
-//     const authHeader = req.headers.authorization;
-
-//     if (!authHeader) {
-//         throw new ApiError(401, 'token required');
-//     }
-//     const token = authHeader.split(' ')[1];
-//     var response = jwt.verify(token, process.env.SecretKey);
-//     var decoded = jwt.decode(token, { complete: true });
-//     if (response) {
-//         myCache.set("myKey", decoded);
-//         return next();
-//     }
-
-//     throw new ApiError(401, 'you have not permission');
-// }
-
 //JWt Authentication Code 
 const auth = (req, res, next) => {
     let authHeaders = req.headers.authorization;
     if (!authHeaders) {
-        // console.log("hello" +token );
+        
         throw new ApiError(401, 'Pleasse provide a token')
     }
     let token = authHeaders.split(' ')[1];

@@ -9,6 +9,7 @@ const Login = handleAsync(async (req, res) => {
     let email = req.body.email;
     let password = req.body.password;
     let loginResponse = await authService.Login(email, password);
+    console.log(loginResponse);
     let message = res.__('loginSuccess', email);
     res.status(status.OK)
         .send(new ApiResponses(status.OK, message, loginResponse));

@@ -13,7 +13,7 @@ const Login = async (email, password) => {
     let user = await userModel.getUserByEmailAndPassword(email, password);
     
     if (!user || user.length <= 0) {
-        throw new ApiError(401, "Email or password does not match");
+     throw new ApiError(401, "Email or password does not match");
     }
         console.log('THE USER IS:='+user);
     let token = jwt.sign({userid:user.USERID, role:user.ROLENAME}, process.env.JWT_SECRET_KEY);

@@ -69,6 +69,7 @@ const executeQuery = async (query, params) => {
         let result = await connection.execute(query,params);
       
         connection.commit();
+        
         console.log('This log is the database i have posted from '+result);
         return await util.parseDatabaseObject(result)
 

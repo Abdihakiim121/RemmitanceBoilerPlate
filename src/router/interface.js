@@ -2,6 +2,11 @@ const express = require('express');
 const router = express.Router();
 const auth = require('./auth.route');
 const user = require('./user.route');
+const shared = require('./shared.route');
+const remittance = require('./remittance.route');
+const customers = require('./customers.route');
+
+
 
 const routPath=[
 {
@@ -11,8 +16,20 @@ const routPath=[
 {
     path: '/user',
     route:user
-}
+},
+{
+    path: '/shared',
+    route:shared
+}, 
+{
+    path: '/remittance', 
+    route: remittance
+}, 
+{
+    path: '/customers' , 
+    route: customers
 
+}
 ]
 
 routPath.forEach(d=>{
