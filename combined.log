@@ -444,3 +444,7 @@
 2021-11-28T07:05:21.018Z [Boiler Plate] [32minfo[39m: Creating user 
 2021-11-28T07:25:21.978Z [Boiler Plate] [32minfo[39m: Calling Create User
 2021-11-28T07:25:21.980Z [Boiler Plate] [32minfo[39m: Creating user 
+2021-11-30T05:50:21.245Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt
+2021-11-30T05:50:32.014Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 432143 by using jwt
+2021-11-30T05:50:47.372Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 432g1 by using jwt
+2021-11-30T05:51:01.530Z [Boiler Plate] [32minfo[39m: Authentication on email sara2276@gmail.com and password 4321 by using jwt

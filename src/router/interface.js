@@ -26,7 +26,7 @@ const routPath=[
     route: remittance
 }, 
 {
-    path: '/customers' , 
+    path: '/customer' , 
     route: customers
 
 }

@@ -14,7 +14,6 @@ const getAllCustomers = handleAsync(async (req, res) => {
 });
 
 const createCustomers = handleAsync(async (req,res) =>{
-
     logger.info(`Calling Create User`);
     let  data = req.body;
     let  result = await customerService.createCustomers(data)

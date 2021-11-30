@@ -26,11 +26,7 @@ const createCustomers = async (customers) => {
     console.log(query);
     return await database.executeOneParamQuery(query);
 }
-
-
 module.exports ={
-
     getCustomers, 
     createCustomers
-
 }
