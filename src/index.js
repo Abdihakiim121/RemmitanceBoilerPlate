@@ -27,8 +27,8 @@ app.use(process.env.API_VERSION, interface);
 // app.use(helmet());
 console.log(process.env.API_VERSION);
 //app.use(cors());
-// Locale Configuration
 
+// Locale Configuration
 i18n.configure({
     locales: ['en', 'es', 'so'],
     defaultLocale: 'en',
@@ -41,8 +41,6 @@ app.use((req, res, next) => {
     let error = 'API Not Found'
     res.status(status).send(new ApiError(status, error));
 });
-
-
 
 // Error Handling Exception
 app.use((err, req, res, next) => {
