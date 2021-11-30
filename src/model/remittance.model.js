@@ -30,7 +30,6 @@ const createRamittance  = async (user) =>{
     let charge = user.charge;
     let payment = user.payment;
     let status = user.status;
-   
     let query = `insert into remit_table values(
         REMITID_SEQ.nextval, '${send}','${recieve}','${amount}','${convertedamount}','${charge}','${payment}','${status}',sysdate
     )`;

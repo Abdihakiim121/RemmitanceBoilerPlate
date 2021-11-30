@@ -16,7 +16,6 @@ return result;
 const getCurrency = async (countryId) => {
 let result = await sharedModel.getCurrency(countryId);
 return result;
-
 }
 
 // get state
@@ -41,9 +40,6 @@ const getPayments = async () => {
     let result = await sharedModel.getAllPayments();
      return result;
 }
-
-
-
 
 module.exports = {
     getCountries,

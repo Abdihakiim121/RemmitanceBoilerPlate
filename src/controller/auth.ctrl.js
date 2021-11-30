@@ -16,15 +16,12 @@ const Login = handleAsync(async (req, res) => {
 });
 
 const register = handleAsync(async (req, res) => {
-
     let user = req.body;
     let { result, err } = await authService.register(user);
-
     if (err) {
         return res.status(status.INTERNAL_SERVER_ERROR)
             .send(new ApiError(status.INTERNAL_SERVER_ERROR, err));
     }
-
     res.status(status.OK).send(new ApiResponses(status.OK, res.__('registerSuccess'),result));
 });
 

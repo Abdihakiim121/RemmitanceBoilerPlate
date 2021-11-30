@@ -5,8 +5,6 @@ const customerService = require('../service/customers.service');
 let { ApiResponses } = require('../payload/apiResponse');
 let database = require('../config/database');
 const { handleAsync } = require('../utils/util');
-const { data } = require('../config/logger');
-
 
 const getAllCustomers = handleAsync(async (req, res) => {
     let users = await customerService.getAllCustomers ();
@@ -18,11 +16,9 @@ const createCustomers = handleAsync(async (req,res) =>{
     let  data = req.body;
     let  result = await customerService.createCustomers(data)
     return res.status(status.OK).send(new ApiResponses(status.OK, 'Created Successfully', result))
-   
 })
 
-
-   module.exports = {
+module.exports = {
        getAllCustomers, 
        createCustomers
    }
