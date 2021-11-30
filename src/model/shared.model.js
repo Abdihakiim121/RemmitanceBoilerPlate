@@ -38,8 +38,8 @@ const getState = async (countryId) => {
 
 // get city
 const getCity = async (countryId,stateId) => {
-    let qry = `select *from cities where stateid =${stateId} or countryid = ${countryId}`;
-    let response = await db.executeQuery(qry);
+    let qry = `select *from city where stateid =${stateId} or countryid = ${countryId}`;
+    let response = await db.executeOneParamQuery(qry);
     return response;
 }
 

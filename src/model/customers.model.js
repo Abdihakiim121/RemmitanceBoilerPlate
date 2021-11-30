@@ -13,26 +13,24 @@ const getCustomers = async () => {
 
 
 const createCustomers = async (customers) => {
-    // let cusid = customers.cusid;
+    //let send = user.send;
     let customername = customers.customername;
-    let phone = customers.customername;
+    let phone = customers.phone;
     let country = customers.country;
     let state = customers.state;
     let city = customers.city;
-
-    let result = await database.executeQuery(`INSERT INTO customers (cusid, customername, phone, country, state, city)
-                                        VALUES (cusid_seq.nextval, :customername, :phone, :country,:state, :city)`
-        , [customername, phone, country, state, city]);
-
-    if (result.rowsAffected === 1)
-        return true;
-
-    return false;
+   // let status = user.status;
+   
+    let query = `insert into customers values(
+        customerid_seq.nextval, '${customername}','${phone}',${country},${state},${city})`;
+    console.log(query);
+    return await database.executeOneParamQuery(query);
 }
 
 
 module.exports ={
 
-    getCustomers
+    getCustomers, 
+    createCustomers
 
 }

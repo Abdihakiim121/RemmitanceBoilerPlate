@@ -13,6 +13,17 @@ const getAllCustomers = handleAsync(async (req, res) => {
     res.status(status.OK).send(new ApiResponses(status.OK, "OK", users));
 });
 
+const createCustomers = handleAsync(async (req,res) =>{
+
+    logger.info(`Calling Create User`);
+    let  data = req.body;
+    let  result = await customerService.createCustomers(data)
+    return res.status(status.OK).send(new ApiResponses(status.OK, 'Created Successfully', result))
+   
+})
+
+
    module.exports = {
-       getAllCustomers
+       getAllCustomers, 
+       createCustomers
    }

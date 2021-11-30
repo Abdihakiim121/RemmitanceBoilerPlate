@@ -24,8 +24,8 @@ const getCustomer = async (id,type) =>{
 
 const createRamittance  = async (user) =>{
     let send = user.send;
-    let recieve = user.reciever;
-    let amount = user.amountinUSD;
+    let recieve = user.recieve;
+    let amount = user.amount;
     let convertedamount = user.convertedamount;
     let charge = user.charge;
     let payment = user.payment;
@@ -34,6 +34,7 @@ const createRamittance  = async (user) =>{
     let query = `insert into remit_table values(
         REMITID_SEQ.nextval, '${send}','${recieve}','${amount}','${convertedamount}','${charge}','${payment}','${status}',sysdate
     )`;
+    console.log(query);
     return await database.executeOneParamQuery(query);
     
 
