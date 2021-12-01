@@ -39,13 +39,13 @@ const auth = (req, res, next) => {
     }
     let token = authHeaders.split(' ')[1];
     let response = jwt.verify(token, process.env.JWT_SECRET_KEY);
-    var decoded = jwt.decode(token, { complete: true });
+   var decoded = jwt.decode(token, { complete: true });
     if (response) {
-        myCache.set("myKey", decoded);
+       myCache.set("myKey", decoded);
         return next();
     }
 
-    throw new ApiError(401, 'you have not permission');
+   throw new ApiError(401, 'you have not permission');
 
    // throw new ApiError(401, 'Your Token has expired, please login again');
 

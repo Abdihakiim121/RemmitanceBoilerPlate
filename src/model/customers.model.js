@@ -1,7 +1,5 @@
 const database = require('../config/database');
 
-
-
 const getCustomers = async () => {
     let qry = 'select * from customers';
     let response = await database.executeOneParamQuery(qry);

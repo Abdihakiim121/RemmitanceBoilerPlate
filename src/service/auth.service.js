@@ -16,7 +16,7 @@ const Login = async (email, password) => {
      throw new ApiError(401, "Email or password does not match");
     }
         console.log('THE USER IS:='+user);
-    let token = jwt.sign({userid:user.USERID, role:user.ROLENAME}, process.env.JWT_SECRET_KEY);
+    let token = jwt.sign({userid:user.USERID, role:user.ROLENAME}, process.env.JWT_SECRET_KEY, {expiresIn:'2000s'});
     console.log(user.USERID)
    // {userid:user[0].USERID, role:user[0].ROLENAME}
     return {accessToken: token,user:user};

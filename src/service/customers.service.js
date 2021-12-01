@@ -9,6 +9,7 @@ const getAllCustomers = async () => {
 const createCustomers = async (user) =>{
     logger.info("Creating user ");
     return await customerModel.createCustomers(user);
+    
 }
 
 

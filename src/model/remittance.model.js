@@ -39,7 +39,9 @@ const createRamittance  = async (user) =>{
 
 }
 const getAllremittance = async()=>{
-    return await database.executeOneParamQuery(`select * from remit_table`);
+    return await database.executeOneParamQuery(`select remittenceid, cusid, customername as sender,phone, amount, paymenttype, remitdate from remit_table , customers, payments
+    where customers.cusid = remit_table.sender and payments.paymentid = remit_table.payment
+    `);
 } 
 
 module.exports = {
