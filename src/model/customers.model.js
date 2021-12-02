@@ -10,7 +10,6 @@ const getCustomers = async () => {
    // return await database.executeOneParamQuery(`select * from customers`);
 }
 
-
 const createCustomers = async (customers) => {
     //let send = user.send;
     let customername = customers.customername;
