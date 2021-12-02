@@ -3,6 +3,7 @@ const router = express.Router();
 const sharedController = require('../controller/shared.controller');
 const authMiddleware = require('../middleware/auth')
 
+
 router.get('/getCountries', authMiddleware.auth ,authMiddleware.authentication('viewAllUsers'), sharedController.getCountries);
 router.get('/getcurrencies',authMiddleware.auth ,authMiddleware.authentication('viewAllUsers'), sharedController.getCurrencies);
 router.get('/getcurrency/:countryid',authMiddleware.auth ,authMiddleware.authentication('viewAllUsers'),sharedController.getCurrency);
