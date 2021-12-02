@@ -1,11 +1,12 @@
 const database = require('../config/database');
 
 const getCustomers = async () => {
-    let qry = 'select * from customers';
+    let qry = `select cusid, customername, phone, countryname, statename, cityname from customers, country, state, city 
+    where country.countryid = customers.country and state.stateid = customers.state and city.cityid=customers.city
+    `;
     let response = await database.executeOneParamQuery(qry);
     console.warn('the response is',response);
     return response;
-
    // return await database.executeOneParamQuery(`select * from customers`);
 }
 
